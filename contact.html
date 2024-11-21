@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Pollution - Contact Us</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <header>
+        <h1>Water Pollution Awareness</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="causes.html">Causes</a></li>
+                <li><a href="effects.html">Effects</a></li>
+                <li><a href="solutions.html">Solutions</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-form">
+            <h2>Get in Touch</h2>
+            <p>If you have any questions, suggestions, or want to get involved, feel free to contact us!</p>
+            
+            <!-- Form action points to Formspree -->
+            <form id="contactForm" action="https://formspree.io/f/myzyyryj" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your full name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your email address" required>
+
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" placeholder="Subject of your message" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" placeholder="Your message" required></textarea>
+
+                <button type="submit">Submit</button>
+                <p id="formMessage" class="form-message"></p>
+            </form>
+        </section>
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Water Pollution Awareness</p>
+    </footer>
+
+    <script src="contact.js"></script>
+</body>
+</html>
